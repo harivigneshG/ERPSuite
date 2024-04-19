@@ -5,7 +5,7 @@ App customize the ERPNext's sale and purchase flows
 
 
  * Custom Button in List view to trigger the popup and display the doc details.
- * Added budget amount to limit the Purchase Order max amount.
+ * Added Feature Max budget amount limit to Purchase Order.
  * Functionality to add Drop ship Purchase order from sales order.
 
 
