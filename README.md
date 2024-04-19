@@ -2,6 +2,8 @@
 <hr/>
 
 App customize the ERPNext's sale and purchase flows
+![Screenshot from 2024-03-28 22-26-36](https://github.com/harivigneshG/ERPSuite/assets/60092946/f173c41c-b6d8-4075-bbab-6dc6fc53e46c)
+
 
 
 * Custom Button in List view to trigger the popup and display the doc details.
