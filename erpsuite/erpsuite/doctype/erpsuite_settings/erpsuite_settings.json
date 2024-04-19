@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-18 22:19:42.614561",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "erpsuite_settings_section",
+  "add_info_button",
+  "column_break_ngpv",
+  "max_budget_amount"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "For Sales Order List View",
+   "fieldname": "add_info_button",
+   "fieldtype": "Check",
+   "label": "Add Info Button"
+  },
+  {
+   "fieldname": "column_break_ngpv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Set Limit to Purchase Order",
+   "fieldname": "max_budget_amount",
+   "fieldtype": "Int",
+   "label": "Maximum Budget Amount"
+  },
+  {
+   "fieldname": "erpsuite_settings_section",
+   "fieldtype": "Section Break",
+   "label": "ERPSuite Settings"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-19 16:40:46.120763",
+ "modified_by": "Administrator",
+ "module": "erpsuite",
+ "name": "ERPSuite Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

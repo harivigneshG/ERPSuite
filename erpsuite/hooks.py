@@ -28,8 +28,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Sales Order" : "public/js/sales_order_edit.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -48,6 +47,8 @@ app_license = "mit"
 # role_home_page = {
 # 	"Role": "home_page"
 # }
+# Boot_Setting_Info
+extend_bootinfo = "erpsuite.boot.merge_boot"
 
 # Generators
 # ----------
@@ -122,13 +123,14 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Purchase Order": {
+		"validate": "erpsuite.erpsuite.utils.budget_validate"
+	},
+    "Sales Order": {
+        "before_submit": "erpsuite.erpsuite.utils.create_drop_ship"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
