@@ -1,2 +1,2 @@
 ### ERPSuite
-</hr>
+<hr/>
