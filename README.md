@@ -17,7 +17,7 @@ App customize the ERPNext's sale and purchase flows
 
 1. Install the app in site: bench --site sitename install-app erpsuite
 
-1. Migrate the database: bench --site site_name migrate
+1. Migrate : bench --site site_name migrate
 
 1. Restart the bench: bench restart
 
